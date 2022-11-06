@@ -1,5 +1,6 @@
 :root{
     --primary-color:rgb(67, 18, 18);
+    --ticked: rgb(159, 157, 157);
 }
 
 *{
@@ -41,7 +42,8 @@ input{
     color:  var(--primary-color);
     width: 50vw;
     max-width: 600px;
-    padding: 8px 12px;
+    padding: 8px 2vw;
+    font-size: 16px;
     border-radius: 33px 0px 0px 33px;
     border-color: var(--primary-color);
 }
@@ -51,6 +53,7 @@ input{
     border-radius: 0px 33px 33px 0px ;
     border-color: var(--primary-color);
     outline: none;
+    font-size: 16px;
     font-weight: 600;
     color: var(--primary-color);
 }
@@ -67,9 +70,15 @@ input{
 ul.tasks li{
     font-size: 20px;
     font-weight: 600;
+    padding: 10px;
 
 }
 
 ul.tasks li label{
     padding: 0px 20px;
+}
+
+.checked{
+    text-decoration: line-through;
+    color: var(--ticked);
 }
