@@ -1,19 +1,75 @@
+:root{
+    --primary-color:rgb(67, 18, 18);
+}
+
 *{
     padding: 0px;
     margin: 0%;
 }
 
+li{
+    list-style-type: none;
+}
+
 body{
     color: white;
-    background-color: rgb(67, 18, 18);
+    background-color: var(--primary-color);
 }
 
 .allcontent{
     width: fit-content;
+    height: fit-content;
     margin: auto;
+    margin-top: 7%;
     text-align: center;
+}
+
+header h1{
+    padding: 40px;
 }
 
 input{
     outline: none;
+}
+
+.add-tasks{
+    padding: 40px 0px;
+}
+
+.add-tasks input[type = text]{
+    caret-color: var(--primary-color);
+    color:  var(--primary-color);
+    width: 50vw;
+    max-width: 600px;
+    padding: 8px 12px;
+    border-radius: 33px 0px 0px 33px;
+    border-color: var(--primary-color);
+}
+
+.add-tasks button{
+    padding: 8px 20px 8px 20px;
+    border-radius: 0px 33px 33px 0px ;
+    border-color: var(--primary-color);
+    outline: none;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.add-tasks button:hover{
+    background-color: rgb(106, 102, 102);
+}
+
+.add-tasks button:active{
+    color: white;
+    background-color: black;
+}
+
+ul.tasks li{
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+ul.tasks li label{
+    padding: 0px 20px;
 }
