@@ -1,0 +1,19 @@
+*{
+    padding: 0px;
+    margin: 0%;
+}
+
+body{
+    color: white;
+    background-color: rgb(67, 18, 18);
+}
+
+.allcontent{
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+}
+
+input{
+    outline: none;
+}
