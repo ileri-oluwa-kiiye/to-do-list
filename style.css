@@ -1,6 +1,9 @@
 :root{
     --primary-color:rgb(67, 18, 18);
     --ticked: rgb(159, 157, 157);
+    --pink: #EC4899;
+    --purple: #885CF6;
+    
 }
 
 *{
@@ -8,9 +11,6 @@
     margin: 0%;
 }
 
-li{
-    list-style-type: none;
-}
 
 body{
     color: white;
@@ -23,6 +23,11 @@ body{
     margin: auto;
     margin-top: 7%;
     text-align: center;
+    max-width: 1250px;
+}
+
+li{
+    list-style-type: none;
 }
 
 header h1{
@@ -34,7 +39,7 @@ input{
 }
 
 .add-tasks{
-    padding: 40px 0px;
+    padding: 40px 0px 100px 0px;
 }
 
 .add-tasks input[type = text]{
@@ -49,13 +54,15 @@ input{
 }
 
 .add-tasks button{
-    padding: 8px 20px 8px 20px;
+    padding: 8px 15px 8px 20px;
     border-radius: 0px 33px 33px 0px ;
     border-color: var(--primary-color);
     outline: none;
     font-size: 16px;
     font-weight: 600;
+    cursor: pointer;
     color: var(--primary-color);
+    background-color: white;
 }
 
 .add-tasks button:hover{
@@ -65,6 +72,11 @@ input{
 .add-tasks button:active{
     color: white;
     background-color: black;
+}
+
+ul{
+    background-color: var(--primary-color);
+    color: white;
 }
 
 ul.tasks li{
@@ -81,4 +93,78 @@ ul.tasks li label{
 .checked{
     text-decoration: line-through;
     color: var(--ticked);
+}
+
+
+.tasks li input{
+    caret-color: var(--primary-color);
+    color:  var(--primary-color);
+    width: 50vw;
+    max-width: 600px;
+    padding: 2px 2vw;
+    font-size: 16px;
+    border: none;
+}
+
+.tasks li{
+    background-color: white;
+    color: var(--primary-color);
+}
+
+ul li{
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul li span{
+    padding: 0px 2vw;
+}
+
+ul #edit-button{
+    color: aquamarine;
+    background-image: linear-gradient(to right, var(--pink), var(--purple));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+
+ul #edit-button:hover{
+    border-bottom: 1px solid var(--purple);
+}
+
+ul #delete{
+    color: crimson;
+    cursor: pointer;
+}
+
+ul #delete:hover{
+    border-bottom: 1px solid crimson;
+}
+
+ul #delete:active{
+    color: black;
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .add-tasks input[type = text]{
+        font-size: 13px;
+    }
+
+    li input[type = text]{
+        font-size: 13px;
+    }
+
+    .add-tasks button{
+        font-size: 13px;
+    }
+
+    ul.tasks li{
+        font-size: 14px;
+    }
+    
 }
