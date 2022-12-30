@@ -36,9 +36,8 @@ function addTask() {
         ul.appendChild(li)
 
         span2.addEventListener("click", () =>{
-            this.parentElement.style.display='none';
+            span2.parentElement.style.display='none';
         })
-
         span1.addEventListener("click", ()=>{
             if (span1.innerHTML !== "Save"){
                 addInput.removeAttribute("readonly");
