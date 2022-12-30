@@ -1,8 +1,8 @@
 :root{
     --primary-color:rgb(67, 18, 18);
     --ticked: rgb(159, 157, 157);
-    --pink: #EC4899;
-    --purple: #885CF6;
+    --pink: #e01c7e;
+    --purple: #7155b6;
     
 }
 
@@ -14,7 +14,7 @@
 
 body{
     color: white;
-    background-color: var(--primary-color);
+    background: linear-gradient(to right, var(--pink), var(--purple));
 }
 
 .allcontent{
@@ -75,7 +75,7 @@ input{
 }
 
 ul{
-    background-color: var(--primary-color);
+    background: linear-gradient(to right, var(--pink), var(--purple));
     color: white;
 }
 
