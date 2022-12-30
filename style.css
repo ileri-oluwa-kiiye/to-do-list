@@ -113,6 +113,7 @@ ul.tasks li label{
 
 ul li{
     border-radius: 8px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -122,7 +123,7 @@ ul li span{
     padding: 0px 2vw;
 }
 
-ul #edit-button{
+ul li .edit-button{
     color: aquamarine;
     background-image: linear-gradient(to right, var(--pink), var(--purple));
     -webkit-background-clip: text;
@@ -131,20 +132,17 @@ ul #edit-button{
     cursor: pointer;
 }
 
-ul #edit-button:hover{
-    border-bottom: 1px solid var(--purple);
-}
 
-ul #delete{
+ul .delete{
     color: crimson;
     cursor: pointer;
 }
 
-ul #delete:hover{
+ul .delete:hover{
     border-bottom: 1px solid crimson;
 }
 
-ul #delete:active{
+ul .delete:active{
     color: black;
 }
 
